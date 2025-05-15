@@ -1,0 +1,70 @@
+:root{
+    --color-principal: #484848;
+    --color-secundario: #343434;
+    --color-claro: rgb(225, 223, 223);
+    --color-rojo: rgb(195, 40, 40);
+    --color-azul: rgb(68, 124, 255)  ;
+    --color-amarillo: rgb(254, 178, 0);
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--color-principal)
+}
+
+section{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario{
+    width: 20%;
+}
+
+#usuario{
+    display: flex;
+    justify-content: center;
+}
+
+#usuario table{
+    width: 30%;
+    text-align: center;
+    background-color: var(--color-claro);
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    color: var(--color-claro);
+}
+
+tbody .eliminar{
+    color: var(--color-claro);
+    background-color: var(--color-rojo);
+}
+
+#btnEnviar{
+    background-color: var(--color-azul);
+}
+
+#btnReset{
+    background-color: var(--color-amarillo);
+}
+
+
+
+
+
+
