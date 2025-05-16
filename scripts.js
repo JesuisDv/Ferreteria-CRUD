@@ -6,12 +6,14 @@ const tablaBody = document.querySelector("table tbody")
 
 formulario.addEventListener("submit", function(e){
     e.preventDefault()
-    const nombre = document.getElementById("nombre").value;
-    const edad = document.getElementById("edad").value;
-    const telefono = document.getElementById("telefono").value;
+    const producto = document.getElementById("producto").value;
+    const referencia = document.getElementById("referencia").value;
+    const cantidad = document.getElementById("cantidad").value;
+    const categoria = document.getElementById("categoria").value;
+    const precio = document.getElementById("precio").value; 
 
-    if(nombre && edad && telefono){
-        usuarios.push({nombre, edad:Number(edad), telefono});
+    if(producto && referencia && cantidad){
+        usuarios.push({producto, referencia:Number(referencia), cantidad, categoria, precio});
         this.reset();
         mostrarUsuarios()
     }
@@ -29,11 +31,16 @@ function mostrarUsuarios(){
 
         fila.innerHTML=`
         <td>${(++identificador).toString().padStart(2, "0")}</td>
-        <td>${usuario.nombre}</td>
-        <td>${usuario.edad}</td>
-        <td>${usuario.telefono}</td>
+        <td>${usuario.producto}</td>
+        <td>${usuario.referencia}</td>
+        <td>${usuario.cantidad}</td>
+        <td>${usuario.categoria}</td>
+        <td>${usuario.precio}</td>
         <td>
-            <button class="eliminar" onclick="eliminarUsuario(${index})">Eliminar</button>
+            <div class="accionesBtns">
+                <button class="eliminar" onclick="eliminarUsuario(${index})">Eliminar</button>
+                <button class="editar" onclick="">Editar</button>
+            </div>
         </td>
         `
         tablaBody.appendChild(fila);
