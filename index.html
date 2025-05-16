@@ -10,12 +10,23 @@
     <section>
         <div id="formulario">
             <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
-                <label for="edad">Edad</label>
-                <input type="number" name="edad" id="edad" required placeholder="Escribe tu edad">
-                <label for="telefono">Telefono</label>
-                <input type="number" name="telefono" required id="telefono" placeholder="Escriba su telefono">
+                <label for="producto">Producto</label>
+                <input type="text" name="producto" id="producto" required placeholder="Escribe un producto">
+                <label for="referencia">Referencia</label>
+                <input type="number" name="referencia" id="referencia" required placeholder="Referencia">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" name="cantidad" required id="cantidad" placeholder="Cantidad">
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="opt">...</option>
+                    <option value="herramientas">Herramientas</option>
+                    <option value="materiales">Materiales</option>
+                    <option value="utencilios">Utencilios</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="electricidad">Electricidad</option>
+                </select>
+                <label for="precio">Precio</label>
+                <input id="precio" type="number" name="precio" required placeholder="$0.00">
                 <button type="submit" id="btnEnviar">Enviar</button>
                 <button type="reset" id="btnReset">Limpiar</button>
             </form>
@@ -27,10 +38,12 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nombre Producto</th>
+                        <th>Producto</th>
                         <th>Referencia</th>
                         <th>Cantidad</th>
+                        <th>Categoria</th>
                         <th>Precio</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
