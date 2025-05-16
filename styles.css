@@ -36,10 +36,10 @@ section{
 #usuario{
     display: flex;
     justify-content: center;
+    height: 70px;
 }
 
 #usuario table{
-    width: 30%;
     text-align: center;
     background-color: var(--color-claro);
 }
@@ -50,9 +50,25 @@ button{
     color: var(--color-claro);
 }
 
+.accionesBtns{
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+}
+
 tbody .eliminar{
     color: var(--color-claro);
     background-color: var(--color-rojo);
+}
+
+tbody .editar{
+    color: black;
+    background-color: var(--color-amarillo);
+}
+
+thead th{
+    padding: 10px 20px 10px 20px;
+    
 }
 
 #btnEnviar{
