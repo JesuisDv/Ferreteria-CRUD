@@ -9,11 +9,16 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
     height: 100vh;
     background-color: var(--color-principal)
+}
+
+h1{
+    color: white;
 }
 
 section{
@@ -48,6 +53,9 @@ button{
     border: none;
     border-radius: 5px;
     color: var(--color-claro);
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .accionesBtns{
@@ -56,9 +64,14 @@ button{
     padding: 12px;
 }
 
+table{
+    margin-top: 20px;
+}
+
 tbody .eliminar{
     color: var(--color-claro);
     background-color: var(--color-rojo);
+    
 }
 
 tbody .editar{
@@ -78,6 +91,23 @@ thead th{
 #btnReset{
     background-color: var(--color-amarillo);
 }
+
+form input{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+form select{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 
 
 
