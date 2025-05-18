@@ -13,8 +13,9 @@
 }
 
 body{
+    display: flex;
     height: 100vh;
-    background-color: var(--color-principal)
+    background-color: var(--color-principal);
 }
 
 h1{
@@ -27,6 +28,13 @@ section{
     justify-content: center;
     align-items: center;
 }
+.div1{
+    width: 100vh;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+}
 
 #formulario form{
     display: flex;
@@ -35,13 +43,15 @@ section{
 }
 
 #formulario{
-    width: 20%;
+    width: 40%;
 }
 
 #usuario{
     display: flex;
     justify-content: center;
-    height: 70px;
+    height: 50%;
+    padding: 40px;
+
 }
 
 #usuario table{
