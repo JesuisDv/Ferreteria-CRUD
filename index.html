@@ -3,58 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Document</title>
+    <title>Ferreteria</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Ferreteria </h1>
-    <section>
-        <div id="formulario">
-            <form>
-                <label for="producto">Producto</label>
-                <input type="text" name="producto" id="producto" required placeholder="Escribe un producto">
-                <label for="referencia">Referencia</label>
-                <input type="number" name="referencia" id="referencia" required placeholder="Referencia">
-                <label for="cantidad">Cantidad</label>
-                <input type="number" name="cantidad" required id="cantidad" placeholder="Cantidad">
-                <label for="categoria">Categoria</label>
-                <select name="categoria" id="categoria">
-                    <option value="opt">...</option>
-                    <option value="herramientas">Herramientas</option>
-                    <option value="materiales">Materiales</option>
-                    <option value="utencilios">Utencilios</option>
-                    <option value="pintura">Pintura</option>
-                    <option value="electricidad">Electricidad</option>
-                </select>
-                <label for="precio">Precio</label>
-                <input id="precio" type="number" name="precio" required placeholder="$0.00">
-                <button type="submit" id="btnEnviar">Enviar</button>
-                <button type="reset" id="btnReset">Limpiar</button>
-            </form>
-        </div>
-    </section>
-    <main>
-        <div id="usuario">
-            <table border="1" id="tabla">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Producto</th>
-                        <th>Referencia</th>
-                        <th>Cantidad</th>
-                        <th>Categoria</th>
-                        <th>Precio</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
+    <div class="div1">
+        <h1>Ferreteria </h1>
+        <section>
+            <div id="formulario">
+                <form>
+                    <label for="producto">Producto🧰</label>
+                    <input type="text" name="producto" id="producto" required placeholder="Escribe un producto">
+                    <label for="referencia">Referencia🔢</label>
+                    <input type="number" name="referencia" id="referencia" required placeholder="Referencia">
+                    <label for="cantidad">Cantidad⚙️</label>
+                    <input type="number" name="cantidad" required id="cantidad" placeholder="Cantidad">
+                    <label for="categoria">Categoria🔩</label>
+                    <select name="categoria" id="categoria">
+                        <option value="opt">...</option>
+                        <option value="herramientas">Herramientas🧰</option>
+                        <option value="materiales">Materiales🪵</option>
+                        <option value="utencilios">Utencilios🪜</option>
+                        <option value="pintura">Pintura🖌️</option>
+                        <option value="electricidad">Electricidad🔌</option>
+                    </select>
+                    <label for="precio">Precio</label>
+                    <input id="precio" type="number" name="precio" required placeholder="$0.00">
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                    <button type="reset" id="btnReset">Limpiar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <div class="div2">
+        <main>
+        <h1>Productos</h1>
+            <div id="usuario">
+                <table border="1" id="tabla">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Referencia</th>
+                            <th>Cantidad</th>
+                            <th>Categoria</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
 </body>
 <script src="./scripts.js"></script>
 </html>
